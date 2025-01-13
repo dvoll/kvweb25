@@ -1,0 +1,68 @@
+{
+	"folders": [
+		{
+			"path": "themes/kvweb25-theme"
+		},
+		{
+			"path": "plugins/kvweb25-blocks"
+		},
+		{
+			"path": ".",
+			"name": "root",
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"themes": true,
+			"plugins": true,
+		},
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/bower_components": true,
+			"**/*.code-search": true,
+			"**/wp-content": true
+		},
+		/* PHP start */
+		"php.stubs": [
+			"*",
+			"wordpress"
+		],
+		"phpstan.binPath": "../../vendor/bin/phpstan",
+		"phpstan.configFile": "../../phpstan.neon",
+		"phpstan.timeout": 100000,
+		"php.format.codeStyle": "WordPress",
+		/* PHP end */
+	
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"[php]": {
+			// "editor.formatOnSave": true,
+			// "editor.defaultFormatter": "DEVSENSE.phptools-vscode" Formatting is not working as expected
+		},
+		"[html]": {
+			"editor.formatOnSave": true,
+			"editor.defaultFormatter": "vscode.html-language-features",
+			"files.insertFinalNewline": true
+		},
+		"[javascript]": {
+			"editor.formatOnSave": true,
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[javascriptreact]": {
+			"editor.formatOnSave": true,
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[typescript]": {
+			"editor.formatOnSave": true,
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[typescriptreact]": {
+			"editor.formatOnSave": true,
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"cSpell.words": [
+			"alignwide",
+			"twentytwentythree"
+		],
+		"cSpell.language": "en,de-DE"
+	}
+}
