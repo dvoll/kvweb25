@@ -1,0 +1,62 @@
+<!-- wp:template-part {"slug":"header","area":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"}}}} -->
+<main class="wp-block-group" style="margin-top:0">
+    <!-- wp:post-content {"lock":{"move":false,"remove":true},"layout":{"type":"constrained"}} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer","tagName":"footer"} /-->
+
+
+<div class="dev-grid">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<style>
+    .dev-grid {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        max-width: 1264px;
+        height: 100vh;
+        transform: translateX(-50%);
+        display: none;
+        flex-direction: row;
+        column-gap: 1.5rem;
+        justify-content: stretch;
+        align-items: stretch;
+        pointer-events: none;
+        padding-inline: 2rem;
+        box-sizing: border-box;
+
+        &:where(.dev-grid--visible) {
+            display: flex;
+        }
+
+        >* {
+            background-color: rgba(200 200 200/12%);
+            flex-grow: 1;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('keydown', (event) => {
+        if (event.ctrlKey && event.altKey && event.key === 'g') {
+            document.querySelector('.dev-grid').classList.toggle('dev-grid--visible');
+        }
+    })
+</script>
