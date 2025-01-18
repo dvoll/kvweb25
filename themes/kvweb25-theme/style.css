@@ -18,15 +18,15 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     transition: color .25s, background-position .25s;
     transition-timing-function: cubic-bezier(.79, .14, .15, .86);
     --a-ln-pos: 100%;
-    --a-ln-clr: var(--wp--preset--color--tertiary);
-    --a-ln-act-clr: var(--wp--preset--color--primary);
+    --a-ln-clr: var(--wp--preset--color--secondary);
+    --a-ln-act-clr: var(--wp--preset--color--tertiary);
     background: linear-gradient(90deg, var(--a-ln-act-clr) 0%, var(--a-ln-act-clr) 50%, var(--a-ln-clr) 50.0000001%, var(--a-ln-clr) 100%) var(--a-ln-pos) bottom / 200% 2px no-repeat;
 }
 
 & a:where(:not(.wp-element-button)):hover {
     --a-ln-pos: 0%;
 } */
-/* Hover and focus styles separator because of bug in wordpress */
+/* Hover and focus styles separator because of bug in WordPress */
 /* & a:where(:not(.wp-element-button)):focus {
     --a-ln-pos: 0%;
 } */
